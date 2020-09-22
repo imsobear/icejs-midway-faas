@@ -1,0 +1,27 @@
+{
+  "plugins": [
+    "@ali/build-plugin-midway-hooks",
+    "@ali/build-plugin-faas",
+    [
+      "build-plugin-fusion",
+      {
+        "themePackage": "@alifd/theme-design-pro"
+      }
+    ],
+    [
+      "build-plugin-moment-locales",
+      {
+        "locales": [
+          "zh-cn"
+        ]
+      }
+    ],
+    [
+      "build-plugin-fast-refresh",
+      {
+        "reactRefresh": true
+      }
+    ],
+    "@ali/build-plugin-ice-def"
+  ]
+}
