@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "description": "icejs & midway hooks",
   "dependencies": {
-    "@ali/ice-faas-render": "^0.3.0",
-    "@ali/midway-faas": "3",
-    "@ali/midway-hooks": "^0.x",
+    "@midwayjs/faas": "^1.0.0",
+    "@midwayjs/faas-middleware-static-file": "^1.0.0",
+    "@midwayjs/hooks": "0.x.x",
     "@alifd/next": "^1.19.4",
     "@alifd/theme-design-pro": "^0.x",
     "moment": "^2.24.0",
@@ -14,14 +14,11 @@
     "react-dom": "^16.4.1"
   },
   "devDependencies": {
-    "@ali/build-plugin-faas": "^0.4.0",
-    "@ali/build-plugin-ice-def": "^0.1.0",
-    "@ali/build-plugin-midway-hooks": "^0.x",
-    "@ali/faas-cli-plugin-midway-hooks": "^0.x",
+    "@midwayjs/faas-dev-pack": "^1.0.0",
     "@ice/spec": "^1.0.1",
+    "@midwayjs/build-plugin-hooks": "^0.0.48",
     "@types/react": "^16.9.13",
     "@types/react-dom": "^16.9.4",
-    "build-plugin-fast-refresh": "^0.1.1",
     "build-plugin-fusion": "^0.1.0",
     "build-plugin-moment-locales": "^0.1.0",
     "eslint": "^6.0.1",
@@ -33,8 +30,7 @@
     "build": "icejs build",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint --cache --ext .js,.jsx ./",
-    "stylelint": "stylelint ./**/*.scss",
-    "ftest": "f test"
+    "stylelint": "stylelint ./**/*.scss"
   },
   "ideMode": {
     "name": "ice-react"
@@ -44,7 +40,5 @@
   },
   "engines": {
     "node": ">=8.0.0"
-  },
-  "originTemplate": "@ali/ice-scaffold-faas-hooks",
-  "private": true
+  }
 }

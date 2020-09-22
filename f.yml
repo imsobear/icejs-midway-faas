@@ -1,23 +1,22 @@
-service: <%= serviceName %>
+# f.yml document https://www.yuque.com/midwayjs/faas/serverless_yml
+
+service: midway-faas-icejs-demo
 
 provider:
-  name: ginkgo
+  name: aliyun # tencent
   runtime: nodejs10
 
+plugins:
+  - npm::@midwayjs/faas-cli-plugin-midway-hooks
+
+## aggregation deplpy
 aggregation:
-  all:
+  application:
+    deployOrigin: false
     functionsPattern:
       - '*'
 
-plugins:
-  - npm::@ali/faas-cli-plugin-midway-hooks
-
-custom:
-  customDomain:
-    domainName: <%= domain %>
-
-layers:
-  remote-debug: # 预发远程调试
-    path: oss:remote-debug-layer@latest
-  tps-limiter: # 限流 Layer
-    path: oss:@ali/tps-limiter-layer@latest
+package:
+  include:
+    - build
+  artifact: code.zip

@@ -1,7 +1,10 @@
 {
+  "devServer": {
+    "writeToDisk": true
+  },
   "plugins": [
-    "@ali/build-plugin-midway-hooks",
-    "@ali/build-plugin-faas",
+    "@midwayjs/build-plugin-hooks",
+    "./build.config.js",
     [
       "build-plugin-fusion",
       {
@@ -15,13 +18,6 @@
           "zh-cn"
         ]
       }
-    ],
-    [
-      "build-plugin-fast-refresh",
-      {
-        "reactRefresh": true
-      }
-    ],
-    "@ali/build-plugin-ice-def"
+    ]
   ]
 }

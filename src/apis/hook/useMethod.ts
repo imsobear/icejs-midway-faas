@@ -1,8 +1,7 @@
-import { useContext } from '@ali/midway-hooks';
+import { useContext } from '@midwayjs/hooks';
 
 /**
- * 获取请求 Method（GET/POST）
- * Hooks 概览：https://yuque.antfin-inc.com/fanyi.lzj/hooks/syntax
+ * Get Request HTTP Method (GET/POST)
  */
 export function useMethod() {
   const { method } = useContext();
