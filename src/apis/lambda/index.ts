@@ -2,7 +2,7 @@ import { useMethod } from '../hook/useMethod';
 
 export async function hello() {
   return {
-    message: 'Hello Midway Serverless!',
+    message: 'Hello ICE & Midway Serverless & Aliyun!',
     method: useMethod(),
   };
 }

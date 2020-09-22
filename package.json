@@ -32,6 +32,11 @@
     "eslint": "eslint --cache --ext .js,.jsx ./",
     "stylelint": "stylelint ./**/*.scss"
   },
+  "midway-integration": {
+    "tsCodeRoot": "src/apis",
+    "lifecycle": {
+    }
+  },
   "ideMode": {
     "name": "ice-react"
   },

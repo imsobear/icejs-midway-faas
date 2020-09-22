@@ -12,9 +12,9 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      Home
+      <h1>Home</h1>
       <div>
-        { loading ? 'loading....' : data?.message }
+        <>请求函数结果：{ loading ? 'loading....' : data?.message }</>
       </div>
     </div>
   );

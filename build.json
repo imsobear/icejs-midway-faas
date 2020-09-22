@@ -1,4 +1,5 @@
 {
+  // "ssr": true,
   "devServer": {
     "writeToDisk": true
   },
