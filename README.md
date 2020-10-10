@@ -7,15 +7,14 @@ By icejs and Midway Serverless.
 ## 快速开始
 
 ```bash
-$ tnpm i
+$ npm i --registry=https://registry.npm.taobao.org
 $ npm start
 ```
 
-## 函数发布
+## 应用发布
 
 ```bash
-$ cnpm i -g @midwayjs/faas-cli
-$ npm run build       # 构建前端资源
+$ npm i -g @midwayjs/faas-cli --registry=https://registry.npm.taobao.org
 $ f deploy --npm cnpm # 发布函数（包含前端静态资源）
 ```
 

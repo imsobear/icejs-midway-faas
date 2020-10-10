@@ -14,12 +14,12 @@
     "react-dom": "^16.4.1"
   },
   "devDependencies": {
-    "@midwayjs/faas-dev-pack": "^1.0.0",
     "@ice/spec": "^1.0.1",
     "@midwayjs/build-plugin-hooks": "^0.0.48",
     "@types/react": "^16.9.13",
     "@types/react-dom": "^16.9.4",
     "build-plugin-fusion": "^0.1.0",
+    "build-plugin-ice-faas": "^0.1.1",
     "build-plugin-moment-locales": "^0.1.0",
     "eslint": "^6.0.1",
     "ice.js": "^1.0.0",
@@ -35,13 +35,8 @@
   "midway-integration": {
     "tsCodeRoot": "src/apis",
     "lifecycle": {
+      "before:package:cleanup": "npm run build"
     }
-  },
-  "ideMode": {
-    "name": "ice-react"
-  },
-  "iceworks": {
-    "type": "react"
   },
   "engines": {
     "node": ">=8.0.0"

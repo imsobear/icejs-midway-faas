@@ -1,11 +1,7 @@
 {
-  // "ssr": true,
-  "devServer": {
-    "writeToDisk": true
-  },
   "plugins": [
     "@midwayjs/build-plugin-hooks",
-    "./build.config.js",
+    "build-plugin-ice-faas",
     [
       "build-plugin-fusion",
       {
